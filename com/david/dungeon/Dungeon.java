@@ -9,9 +9,11 @@ package com.david.dungeon;
 class Dungeon {
 
 	Dungeon() {
-		System.out.println("\t\tYou have entered a dungeon.\n\n");
+		System.out.println("\n\t\t  *********************************");
+		System.out.println("\t\t  *  You have entered a dungeon.  *");
+		System.out.println("\t\t  *********************************\n");
 	}
-
+/*
 	public static void main(String[] args) {
 		System.out.println("Generating new character...");
 		//Character myChar = new Character("Timmy");
@@ -19,4 +21,5 @@ class Dungeon {
 		System.out.println("Here is your new character:");
 		myChar.printChar();
 	}
+	*/
 }
