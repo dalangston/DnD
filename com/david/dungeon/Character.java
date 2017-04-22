@@ -12,6 +12,8 @@ class Character {
 	int chr;
 
 	String name;
+	
+	Dice statDie = new Dice(3,6);  // Roll 3d6 for standard PCs
 
 	Character() {
 		statGen();
@@ -43,14 +45,14 @@ class Character {
 
 	void statGen() {
 		
-		Dice statDie = new Dice(3, 6);  // Roll 3d6 for standard PC stats
+		//Dice statDie = new Dice(3, 6);  // Roll 3d6 for standard PC stats
 		
-		this.str = statDie.roll();
-		this.dex = statDie.roll();
-		this.con = statDie.roll();
-		this.intel = statDie.roll();
-		this.wis = statDie.roll();
-		this.chr = statDie.roll();
+		this.str = this.statDie.roll();
+		this.dex = this.statDie.roll();
+		this.con = this.statDie.roll();
+		this.intel = this.statDie.roll();
+		this.wis = this.statDie.roll();
+		this.chr = this.statDie.roll();
 	}
 
 	void nameGen() {
