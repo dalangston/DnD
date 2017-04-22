@@ -42,12 +42,15 @@ class Character {
 	}
 
 	void statGen() {
-		this.str = Dice.roll(3,6);
-		this.dex = Dice.roll(3,6);
-		this.con = Dice.roll(3,6);
-		this.intel = Dice.roll(3,6);
-		this.wis = Dice.roll(3,6);
-		this.chr = Dice.roll(3,6);
+		
+		Dice statDie = new Dice(3, 6);  // Roll 3d6 for standard PC stats
+		
+		this.str = statDie.roll();
+		this.dex = statDie.roll();
+		this.con = statDie.roll();
+		this.intel = statDie.roll();
+		this.wis = statDie.roll();
+		this.chr = statDie.roll();
 	}
 
 	void nameGen() {
