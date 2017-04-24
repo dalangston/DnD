@@ -9,9 +9,9 @@ package com.david.dungeon;
 class Dungeon {
 
 	Dungeon() {
-		System.out.println("\n\t\t  *********************************");
-		System.out.println("\t\t  *  You have entered a dungeon.  *");
-		System.out.println("\t\t  *********************************\n");
+		System.out.print("\n\t\t  *********************************");
+		System.out.print("\n\t\t  *  You have entered a dungeon.  *");
+		System.out.print("\n\t\t  *********************************\n\n");
 	}
 /*
 	public static void main(String[] args) {
