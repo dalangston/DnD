@@ -1,6 +1,10 @@
 package com.david.dungeon;
 
 class Dice {
+	
+	int sides;
+	int num;
+	
 	/**
 	 * Rolls Dice of arbirary geometry
 	 *
@@ -15,4 +19,19 @@ class Dice {
 		}
 		return total;
 	}
+	
+	public int roll() {
+		return this.roll(this.num, this.sides);
+	}
+	
+	Dice(int num, int sides) {
+		this.sides = sides;
+		this.num = num;
+	}
+	
+	Dice() {
+		this.sides = 6;
+		this.num = 1;
+	}
+	
 }

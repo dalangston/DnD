@@ -2,7 +2,7 @@ package com.david.dungeon;
 
 /**
  * Create a character based loosely on AD&D 2nd Edition rules
-  */
+ */
 class Character {
 	int str;
 	int dex;
@@ -12,6 +12,8 @@ class Character {
 	int chr;
 
 	String name;
+	
+	Dice statDie = new Dice(3,6);  // Roll 3d6 for standard PCs
 
 	Character() {
 		statGen();
@@ -42,12 +44,12 @@ class Character {
 	}
 
 	void statGen() {
-		this.str = Dice.roll(3,6);
-		this.dex = Dice.roll(3,6);
-		this.con = Dice.roll(3,6);
-		this.intel = Dice.roll(3,6);
-		this.wis = Dice.roll(3,6);
-		this.chr = Dice.roll(3,6);
+		this.str = this.statDie.roll();
+		this.dex = this.statDie.roll();
+		this.con = this.statDie.roll();
+		this.intel = this.statDie.roll();
+		this.wis = this.statDie.roll();
+		this.chr = this.statDie.roll();
 	}
 
 	void nameGen() {
@@ -59,10 +61,10 @@ class Character {
 	}
 
 	public void printChar() {
-		System.out.println(this.name);
-		System.out.println("STR:  " + this.str + " \tINT:  " + this.intel);
-		System.out.println("DEX:  " + this.dex + " \tWIS:  " + this.wis);
-		System.out.println("CON:  " + this.con + " \tCHR:  " + this.chr);
+		System.out.format("Name: %s \n", this.name);
+		System.out.format("STR: %d  \t INT: %d \n", this.str, this.intel);
+		System.out.format("DEX: %d  \t WIS: %d \n", this.dex, this.wis);
+		System.out.format("CON: %d  \t CHR: %d \n", this.con, this.chr);
 	}
 
 }
