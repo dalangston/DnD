@@ -1,5 +1,4 @@
 package dungeon;
-//package com.david.dungeon;
 
 /**
  * Dungeon crawl based loosely on AD&D 2nd Edition rules

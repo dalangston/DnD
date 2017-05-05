@@ -1,5 +1,4 @@
 package dungeon;
-//package com.david.dungeon;
 
 public class Main {
   public static void main(String[] args) {

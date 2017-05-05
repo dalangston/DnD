@@ -1,5 +1,4 @@
 package dungeon;
-//package com.david.dungeon;
 
 /**
  * Create a character based loosely on AD&D 2nd Edition rules
@@ -14,7 +13,7 @@ class Character {
 
 	String name;
 	
-	Dice statDie = new Dice(3,6);  // Roll 3d6 for standard PCs
+	dungeon.util.Dice statDie = new dungeon.util.Dice(3,6);  // Roll 3d6 for standard PCs
 
 	Character() {
 		statGen();
